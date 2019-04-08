@@ -32,8 +32,3 @@ int syncTest(char *testName, char *errMsg, syncTestHandler_t callback) {
     return status;
   }
 }
-
-void asyncTest(char *testName, char *errMsg, asyncTestHandler_t callback) {
-  printf("Running %s\n", testName);
-  callback(printPass, printFail, errMsg);
-}

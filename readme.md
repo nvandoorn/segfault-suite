@@ -22,7 +22,3 @@ int main() {
   return 0;
 }
 ```
-
-## TODO
-
-1. Run `asyncTest` test callbacks in separate thread (fork)
