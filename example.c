@@ -1,5 +1,4 @@
 #include "test-lib.h"
-#include <stdio.h>
 
 int badTest() {
   int* ptr = (int*)0;
