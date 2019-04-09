@@ -19,7 +19,7 @@ int syncTest(char *testName, char *errMsg, syncTestHandler_t callback) {
   printf("Running %s...\n", testName);
   pid = fork();
   if(pid == 0) {
-    return callback();
+    exit(callback());
   }
   else {
     waitpid(pid, &status, 0);
